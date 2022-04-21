@@ -11,7 +11,7 @@ print ("\nWelcome to G-Operation\n")
 with open('token.json', 'r') as fp:
     connecting = json.load(fp)
 if connecting["token"] == "":
-   client = LINE("telo.satu87@gmail.com","febrians87)
+   client = LINE("telo.satu87@gmail.com","febrians87")
 else:
    client = LINE(idOrAuthToken=connecting['token'])
 channel = LINEChannel(client,client.server.CHANNEL_ID['LINE_TIMELINE'])
